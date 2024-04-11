@@ -1,13 +1,12 @@
-package me.dio.santanderdevweek2024;
+package me.dio.sdw24;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SantanderDevWeek2024Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SantanderDevWeek2024Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
-
 }
