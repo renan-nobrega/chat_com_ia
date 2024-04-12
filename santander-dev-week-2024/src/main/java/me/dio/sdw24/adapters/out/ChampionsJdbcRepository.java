@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import me.dio.sdw24.domain.model.Champions;
@@ -21,7 +22,9 @@ public class ChampionsJdbcRepository implements ChampionsRepository {
             rs.getLong("id"),
             rs.getString("name"),
             rs.getString("role"),
-            rs.getString("lane")
+            rs.getString("lore"),
+            rs.getString("imageUrl")
+
         ))
     }
 
